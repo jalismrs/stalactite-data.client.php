@@ -1,6 +1,6 @@
 # Jalismrs\Stalactite\Client\Data\CustomersRelationsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.pro/data.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `getCustomerRelations()`
 
 ```php
-getCustomerRelations($uid): \Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation2[]
+getCustomerRelations($uid): \Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation[]
 ```
 
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation2[]**](../Model/DomainCustomerRelation2.md)
+[**\Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation[]**](../Model/DomainCustomerRelation.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 ## `getMyCustomerRelations()`
 
 ```php
-getMyCustomerRelations(): \Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation2[]
+getMyCustomerRelations(): \Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation[]
 ```
 
 
@@ -114,7 +114,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation2[]**](../Model/DomainCustomerRelation2.md)
+[**\Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation[]**](../Model/DomainCustomerRelation.md)
 
 ### Authorization
 

@@ -1,6 +1,6 @@
 # Jalismrs\Stalactite\Client\Data\DomainsRelationsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.pro/data.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -12,7 +12,7 @@ Method | HTTP request | Description
 ## `addCustomerRelations()`
 
 ```php
-addCustomerRelations($uid, $add_customer_relations_request): \Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation[]
+addCustomerRelations($uid, $add_customer_relations_request): \Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation2[]
 ```
 
 
@@ -58,7 +58,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation[]**](../Model/DomainCustomerRelation.md)
+[**\Jalismrs\Stalactite\Client\Data\Model\DomainCustomerRelation2[]**](../Model/DomainCustomerRelation2.md)
 
 ### Authorization
 
