@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**scope** | **string** |  |
-**resource** | **string** |  |
-**operation** | **string** |  |
+**scope** | **string** |  | [optional]
+**resource** | **string** |  | [optional]
+**operation** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
