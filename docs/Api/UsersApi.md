@@ -1,6 +1,6 @@
 # Jalismrs\Stalactite\Client\Data\UsersApi
 
-All URIs are relative to https://stalactite.jalis.pro/data.
+All URIs are relative to https://stalactite.jalis.dev/data.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -325,7 +325,7 @@ Name | Type | Description  | Notes
 ## `getUsers()`
 
 ```php
-getUsers($page, $fullname): \Jalismrs\Stalactite\Client\Data\Model\GetUsersResponse
+getUsers($page, $full_name): \Jalismrs\Stalactite\Client\Data\Model\GetUsersResponse
 ```
 
 
@@ -352,10 +352,10 @@ $apiInstance = new Jalismrs\Stalactite\Client\Data\Api\UsersApi(
     $config
 );
 $page = 56; // int | Specify the page to get. Default: 1
-$fullname = 56; // int | Filters users by fullname
+$full_name = 'full_name_example'; // string | Filters users by fullname
 
 try {
-    $result = $apiInstance->getUsers($page, $fullname);
+    $result = $apiInstance->getUsers($page, $full_name);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UsersApi->getUsers: ', $e->getMessage(), PHP_EOL;
@@ -367,7 +367,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Specify the page to get. Default: 1 | [optional]
- **fullname** | **int**| Filters users by fullname | [optional]
+ **full_name** | **string**| Filters users by fullname | [optional]
 
 ### Return type
 
