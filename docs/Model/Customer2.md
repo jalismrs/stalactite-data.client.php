@@ -4,9 +4,9 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**email** | **string** |  | [optional]
-**first_name** | **string** |  | [optional]
-**last_name** | **string** |  | [optional]
-**uid** | **string** |  | [optional]
+**email** | **string** |  |
+**first_name** | **string** |  |
+**last_name** | **string** |  |
+**uid** | **string** |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
