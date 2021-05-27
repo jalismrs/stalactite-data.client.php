@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 ## `getCustomers()`
 
 ```php
-getCustomers($page, $fullname): \Jalismrs\Stalactite\Client\Data\Model\GetCustomersResponse
+getCustomers($page, $full_name): \Jalismrs\Stalactite\Client\Data\Model\GetCustomersResponse
 ```
 
 
@@ -290,10 +290,10 @@ $apiInstance = new Jalismrs\Stalactite\Client\Data\Api\CustomersApi(
     $config
 );
 $page = 56; // int | Specify the page to get. Default: 1
-$fullname = 56; // int | Filters customers by fullname
+$full_name = 'full_name_example'; // string | Filters customers by fullname
 
 try {
-    $result = $apiInstance->getCustomers($page, $fullname);
+    $result = $apiInstance->getCustomers($page, $full_name);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CustomersApi->getCustomers: ', $e->getMessage(), PHP_EOL;
@@ -305,7 +305,7 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **page** | **int**| Specify the page to get. Default: 1 | [optional]
- **fullname** | **int**| Filters customers by fullname | [optional]
+ **full_name** | **string**| Filters customers by fullname | [optional]
 
 ### Return type
 
