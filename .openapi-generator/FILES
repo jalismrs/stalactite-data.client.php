@@ -6,6 +6,7 @@ README.md
 composer.json
 docs/Api/CustomersAccessApi.md
 docs/Api/CustomersApi.md
+docs/Api/CustomersMeApi.md
 docs/Api/CustomersRelationsApi.md
 docs/Api/DomainsApi.md
 docs/Api/DomainsRelationsApi.md
@@ -63,6 +64,7 @@ docs/Model/User4.md
 git_push.sh
 lib/Api/CustomersAccessApi.php
 lib/Api/CustomersApi.php
+lib/Api/CustomersMeApi.php
 lib/Api/CustomersRelationsApi.php
 lib/Api/DomainsApi.php
 lib/Api/DomainsRelationsApi.php

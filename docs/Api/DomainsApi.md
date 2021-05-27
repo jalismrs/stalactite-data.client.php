@@ -264,7 +264,7 @@ Name | Type | Description  | Notes
 ## `getDomains()`
 
 ```php
-getDomains($name, $page): \Jalismrs\Stalactite\Client\Data\Model\GetDomainsResponse
+getDomains($page, $name): \Jalismrs\Stalactite\Client\Data\Model\GetDomainsResponse
 ```
 
 
@@ -290,11 +290,11 @@ $apiInstance = new Jalismrs\Stalactite\Client\Data\Api\DomainsApi(
     new GuzzleHttp\Client(),
     $config
 );
-$name = 'name_example'; // string | Filter domains by name
 $page = 56; // int | Specify the page to get. Default: 1
+$name = 'name_example'; // string | Filter domains by name
 
 try {
-    $result = $apiInstance->getDomains($name, $page);
+    $result = $apiInstance->getDomains($page, $name);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DomainsApi->getDomains: ', $e->getMessage(), PHP_EOL;
@@ -305,8 +305,8 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **name** | **string**| Filter domains by name | [optional]
  **page** | **int**| Specify the page to get. Default: 1 | [optional]
+ **name** | **string**| Filter domains by name | [optional]
 
 ### Return type
 
