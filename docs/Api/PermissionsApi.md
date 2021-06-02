@@ -1,6 +1,6 @@
 # Jalismrs\Stalactite\Client\Data\PermissionsApi
 
-All URIs are relative to https://stalactite.jalis.pro/data.
+All URIs are relative to https://stalactite.jalis.dev/data.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
