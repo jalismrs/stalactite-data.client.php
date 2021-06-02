@@ -1,6 +1,6 @@
 # Jalismrs\Stalactite\Client\Data\DomainsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.pro/data.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -200,7 +200,7 @@ Name | Type | Description  | Notes
 ## `getDomainBy()`
 
 ```php
-getDomainBy($name, $email): \Jalismrs\Stalactite\Client\Data\Model\Domain
+getDomainBy($name): \Jalismrs\Stalactite\Client\Data\Model\Domain
 ```
 
 
@@ -227,10 +227,9 @@ $apiInstance = new Jalismrs\Stalactite\Client\Data\Api\DomainsApi(
     $config
 );
 $name = 'name_example'; // string | Filters domains by name
-$email = 'email_example'; // string | Filters domains by apiKey
 
 try {
-    $result = $apiInstance->getDomainBy($name, $email);
+    $result = $apiInstance->getDomainBy($name);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DomainsApi->getDomainBy: ', $e->getMessage(), PHP_EOL;
@@ -242,7 +241,6 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **name** | **string**| Filters domains by name |
- **email** | **string**| Filters domains by apiKey | [optional]
 
 ### Return type
 
