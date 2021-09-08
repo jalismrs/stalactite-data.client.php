@@ -1,6 +1,6 @@
 # Jalismrs\Stalactite\Client\Data\UsersAccessClearancesApi
 
-All URIs are relative to https://stalactite.jalis.pro/data.
+All URIs are relative to https://stalactite.jalis.dev/data.
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
@@ -11,7 +11,7 @@ Method | HTTP request | Description
 ## `getMyAccessClearances()`
 
 ```php
-getMyAccessClearances($domain_uid): \Jalismrs\Stalactite\Client\Data\Model\AccessClearance[]
+getMyAccessClearances($domain_uid): \Jalismrs\Stalactite\Client\Data\Model\AccessClearance
 ```
 
 
@@ -55,7 +55,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Jalismrs\Stalactite\Client\Data\Model\AccessClearance[]**](../Model/AccessClearance.md)
+[**\Jalismrs\Stalactite\Client\Data\Model\AccessClearance**](../Model/AccessClearance.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ Name | Type | Description  | Notes
 ## `getUserAccessClearances()`
 
 ```php
-getUserAccessClearances($user_uid, $domain_uid): \Jalismrs\Stalactite\Client\Data\Model\AccessClearance[]
+getUserAccessClearances($user_uid, $domain_uid): \Jalismrs\Stalactite\Client\Data\Model\AccessClearance
 ```
 
 
@@ -119,7 +119,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Jalismrs\Stalactite\Client\Data\Model\AccessClearance[]**](../Model/AccessClearance.md)
+[**\Jalismrs\Stalactite\Client\Data\Model\AccessClearance**](../Model/AccessClearance.md)
 
 ### Authorization
 
