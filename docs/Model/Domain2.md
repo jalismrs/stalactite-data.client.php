@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **name** | **string** |  |
-**generation_date** | [**\DateTime**](\DateTime.md) |  |
+**generation_date** | **\DateTime** |  |
 **type** | **string** |  |
 **api_key** | **string** |  |
 **external_auth** | **bool** |  |
