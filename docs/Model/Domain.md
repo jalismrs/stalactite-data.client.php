@@ -9,6 +9,7 @@ Name | Type | Description | Notes
 **type** | **string** |  |
 **api_key** | **string** |  |
 **external_auth** | **bool** |  |
+**smarte** | **bool** |  |
 **uid** | **string** |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
