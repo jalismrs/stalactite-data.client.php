@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **name** | **string** |  |
 **type** | **string** |  |
 **external_auth** | **bool** |  |
+**smarte** | **bool** |  |
 **api_key** | **string** |  |
 **generation_date** | **string** |  |
 
