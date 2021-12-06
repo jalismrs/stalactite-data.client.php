@@ -8,6 +8,7 @@ Name | Type | Description | Notes
 **type** | **string** |  |
 **external_auth** | **bool** |  |
 **smarte** | **bool** |  |
+**active** | **bool** |  |
 **api_key** | **string** |  |
 **generation_date** | **string** |  |
 
