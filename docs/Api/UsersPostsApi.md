@@ -1,12 +1,12 @@
 # Jalismrs\Stalactite\Client\Data\UsersPostsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**addUserPosts()**](UsersPostsApi.md#addUserPosts) | **POST** /users/{uid}/posts | 
-[**getUserPosts()**](UsersPostsApi.md#getUserPosts) | **GET** /users/{uid}/posts | 
-[**removeUserPosts()**](UsersPostsApi.md#removeUserPosts) | **DELETE** /users/{uid}/posts | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**addUserPosts()**](UsersPostsApi.md#addUserPosts) | **POST** /users/{uid}/posts |  |
+| [**getUserPosts()**](UsersPostsApi.md#getUserPosts) | **GET** /users/{uid}/posts |  |
+| [**removeUserPosts()**](UsersPostsApi.md#removeUserPosts) | **DELETE** /users/{uid}/posts |  |
 
 
 ## `addUserPosts()`
@@ -50,10 +50,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**|  |
- **update_user_posts_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserPostsRequest**](../Model/UpdateUserPostsRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**|  | |
+| **update_user_posts_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserPostsRequest**](../Model/UpdateUserPostsRequest.md)|  | |
 
 ### Return type
 
@@ -113,9 +113,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**|  | |
 
 ### Return type
 
@@ -175,10 +175,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**|  |
- **update_user_posts_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserPostsRequest**](../Model/UpdateUserPostsRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**|  | |
+| **update_user_posts_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserPostsRequest**](../Model/UpdateUserPostsRequest.md)|  | |
 
 ### Return type
 

@@ -1,11 +1,11 @@
 # Jalismrs\Stalactite\Client\Data\UsersAccessClearancesApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getMyAccessClearances()**](UsersAccessClearancesApi.md#getMyAccessClearances) | **GET** /users/me/access/{domainUid} | 
-[**getUserAccessClearances()**](UsersAccessClearancesApi.md#getUserAccessClearances) | **GET** /users/{userUid}/access/{domainUid} | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getMyAccessClearances()**](UsersAccessClearancesApi.md#getMyAccessClearances) | **GET** /users/me/access/{domainUid} |  |
+| [**getUserAccessClearances()**](UsersAccessClearancesApi.md#getUserAccessClearances) | **GET** /users/{userUid}/access/{domainUid} |  |
 
 
 ## `getMyAccessClearances()`
@@ -49,9 +49,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **domain_uid** | **string**|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **domain_uid** | **string**|  | |
 
 ### Return type
 
@@ -112,10 +112,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **user_uid** | **string**|  |
- **domain_uid** | **string**|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **user_uid** | **string**|  | |
+| **domain_uid** | **string**|  | |
 
 ### Return type
 

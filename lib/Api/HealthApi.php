@@ -1,6 +1,6 @@
 <?php
 /**
- * CustomersMeApi
+ * HealthApi
  * PHP version 7.4
  *
  * @category Class
@@ -40,14 +40,14 @@ use Jalismrs\Stalactite\Client\Data\HeaderSelector;
 use Jalismrs\Stalactite\Client\Data\ObjectSerializer;
 
 /**
- * CustomersMeApi Class Doc Comment
+ * HealthApi Class Doc Comment
  *
  * @category Class
  * @package  Jalismrs\Stalactite\Client\Data
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
-class CustomersMeApi
+class HealthApi
 {
     /**
      * @var ClientInterface
@@ -71,7 +71,7 @@ class CustomersMeApi
 
     /** @var string[] $contentTypes **/
     public const contentTypes = [
-        'getMeAsCustomer' => [
+        'getApiHealth' => [
             'application/json',
         ],
     ];
@@ -123,32 +123,32 @@ class CustomersMeApi
     }
 
     /**
-     * Operation getMeAsCustomer
+     * Operation getApiHealth
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getMeAsCustomer'] to see the possible values for this operation
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiHealth'] to see the possible values for this operation
      *
      * @throws \Jalismrs\Stalactite\Client\Data\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return \Jalismrs\Stalactite\Client\Data\Model\Customer|\Jalismrs\Stalactite\Client\Data\Model\ApiError
+     * @return \Jalismrs\Stalactite\Client\Data\Model\HealthResponse|\Jalismrs\Stalactite\Client\Data\Model\ApiError
      */
-    public function getMeAsCustomer(string $contentType = self::contentTypes['getMeAsCustomer'][0])
+    public function getApiHealth(string $contentType = self::contentTypes['getApiHealth'][0])
     {
-        list($response) = $this->getMeAsCustomerWithHttpInfo($contentType);
+        list($response) = $this->getApiHealthWithHttpInfo($contentType);
         return $response;
     }
 
     /**
-     * Operation getMeAsCustomerWithHttpInfo
+     * Operation getApiHealthWithHttpInfo
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getMeAsCustomer'] to see the possible values for this operation
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiHealth'] to see the possible values for this operation
      *
      * @throws \Jalismrs\Stalactite\Client\Data\ApiException on non-2xx response
      * @throws \InvalidArgumentException
-     * @return array of \Jalismrs\Stalactite\Client\Data\Model\Customer|\Jalismrs\Stalactite\Client\Data\Model\ApiError, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Jalismrs\Stalactite\Client\Data\Model\HealthResponse|\Jalismrs\Stalactite\Client\Data\Model\ApiError, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getMeAsCustomerWithHttpInfo(string $contentType = self::contentTypes['getMeAsCustomer'][0])
+    public function getApiHealthWithHttpInfo(string $contentType = self::contentTypes['getApiHealth'][0])
     {
-        $request = $this->getMeAsCustomerRequest($contentType);
+        $request = $this->getApiHealthRequest($contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -187,17 +187,17 @@ class CustomersMeApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\Jalismrs\Stalactite\Client\Data\Model\Customer' === '\SplFileObject') {
+                    if ('\Jalismrs\Stalactite\Client\Data\Model\HealthResponse' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\Jalismrs\Stalactite\Client\Data\Model\Customer' !== 'string') {
+                        if ('\Jalismrs\Stalactite\Client\Data\Model\HealthResponse' !== 'string') {
                             $content = json_decode($content);
                         }
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\Jalismrs\Stalactite\Client\Data\Model\Customer', []),
+                        ObjectSerializer::deserialize($content, '\Jalismrs\Stalactite\Client\Data\Model\HealthResponse', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -218,7 +218,7 @@ class CustomersMeApi
                     ];
             }
 
-            $returnType = '\Jalismrs\Stalactite\Client\Data\Model\Customer';
+            $returnType = '\Jalismrs\Stalactite\Client\Data\Model\HealthResponse';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -239,7 +239,7 @@ class CustomersMeApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\Jalismrs\Stalactite\Client\Data\Model\Customer',
+                        '\Jalismrs\Stalactite\Client\Data\Model\HealthResponse',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -258,16 +258,16 @@ class CustomersMeApi
     }
 
     /**
-     * Operation getMeAsCustomerAsync
+     * Operation getApiHealthAsync
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getMeAsCustomer'] to see the possible values for this operation
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiHealth'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getMeAsCustomerAsync(string $contentType = self::contentTypes['getMeAsCustomer'][0])
+    public function getApiHealthAsync(string $contentType = self::contentTypes['getApiHealth'][0])
     {
-        return $this->getMeAsCustomerAsyncWithHttpInfo($contentType)
+        return $this->getApiHealthAsyncWithHttpInfo($contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -276,17 +276,17 @@ class CustomersMeApi
     }
 
     /**
-     * Operation getMeAsCustomerAsyncWithHttpInfo
+     * Operation getApiHealthAsyncWithHttpInfo
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getMeAsCustomer'] to see the possible values for this operation
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiHealth'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getMeAsCustomerAsyncWithHttpInfo(string $contentType = self::contentTypes['getMeAsCustomer'][0])
+    public function getApiHealthAsyncWithHttpInfo(string $contentType = self::contentTypes['getApiHealth'][0])
     {
-        $returnType = '\Jalismrs\Stalactite\Client\Data\Model\Customer';
-        $request = $this->getMeAsCustomerRequest($contentType);
+        $returnType = '\Jalismrs\Stalactite\Client\Data\Model\HealthResponse';
+        $request = $this->getApiHealthRequest($contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -325,18 +325,18 @@ class CustomersMeApi
     }
 
     /**
-     * Create request for operation 'getMeAsCustomer'
+     * Create request for operation 'getApiHealth'
      *
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getMeAsCustomer'] to see the possible values for this operation
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiHealth'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function getMeAsCustomerRequest(string $contentType = self::contentTypes['getMeAsCustomer'][0])
+    public function getApiHealthRequest(string $contentType = self::contentTypes['getApiHealth'][0])
     {
 
 
-        $resourcePath = '/customers/me';
+        $resourcePath = '/health';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -379,9 +379,9 @@ class CustomersMeApi
         }
 
         // this endpoint requires API key authentication
-        $apiKey = $this->config->getApiKeyWithPrefix('X-API-TOKEN');
+        $apiKey = $this->config->getApiKeyWithPrefix('X-HEALTH-TOKEN');
         if ($apiKey !== null) {
-            $headers['X-API-TOKEN'] = $apiKey;
+            $headers['X-HEALTH-TOKEN'] = $apiKey;
         }
 
         $defaultHeaders = [];

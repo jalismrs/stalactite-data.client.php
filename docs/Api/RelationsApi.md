@@ -1,11 +1,11 @@
 # Jalismrs\Stalactite\Client\Data\RelationsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**deleteDomainCustomerRelation()**](RelationsApi.md#deleteDomainCustomerRelation) | **DELETE** /relations/customers/{uid} | 
-[**deleteDomainUserRelation()**](RelationsApi.md#deleteDomainUserRelation) | **DELETE** /relations/users/{uid} | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**deleteDomainCustomerRelation()**](RelationsApi.md#deleteDomainCustomerRelation) | **DELETE** /relations/customers/{uid} |  |
+| [**deleteDomainUserRelation()**](RelationsApi.md#deleteDomainUserRelation) | **DELETE** /relations/users/{uid} |  |
 
 
 ## `deleteDomainCustomerRelation()`
@@ -48,9 +48,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the domainCustomerRelation to delete |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the domainCustomerRelation to delete | |
 
 ### Return type
 
@@ -109,9 +109,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the domainUserRelation to delete |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the domainUserRelation to delete | |
 
 ### Return type
 

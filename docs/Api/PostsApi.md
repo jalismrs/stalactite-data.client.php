@@ -1,17 +1,17 @@
 # Jalismrs\Stalactite\Client\Data\PostsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**addPostPermissions()**](PostsApi.md#addPostPermissions) | **POST** /posts/{uid}/permissions | 
-[**createPost()**](PostsApi.md#createPost) | **POST** /posts | 
-[**deletePost()**](PostsApi.md#deletePost) | **DELETE** /posts/{uid} | 
-[**deletePostPermissions()**](PostsApi.md#deletePostPermissions) | **DELETE** /posts/{uid}/permissions | 
-[**getPost()**](PostsApi.md#getPost) | **GET** /posts/{uid} | 
-[**getPostUser()**](PostsApi.md#getPostUser) | **GET** /posts/{uid}/users | 
-[**getPosts()**](PostsApi.md#getPosts) | **GET** /posts | 
-[**updatePost()**](PostsApi.md#updatePost) | **PUT** /posts/{uid} | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**addPostPermissions()**](PostsApi.md#addPostPermissions) | **POST** /posts/{uid}/permissions |  |
+| [**createPost()**](PostsApi.md#createPost) | **POST** /posts |  |
+| [**deletePost()**](PostsApi.md#deletePost) | **DELETE** /posts/{uid} |  |
+| [**deletePostPermissions()**](PostsApi.md#deletePostPermissions) | **DELETE** /posts/{uid}/permissions |  |
+| [**getPost()**](PostsApi.md#getPost) | **GET** /posts/{uid} |  |
+| [**getPostUser()**](PostsApi.md#getPostUser) | **GET** /posts/{uid}/users |  |
+| [**getPosts()**](PostsApi.md#getPosts) | **GET** /posts |  |
+| [**updatePost()**](PostsApi.md#updatePost) | **PUT** /posts/{uid} |  |
 
 
 ## `addPostPermissions()`
@@ -55,10 +55,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the post |
- **update_post_permissions_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdatePostPermissionsRequest**](../Model/UpdatePostPermissionsRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the post | |
+| **update_post_permissions_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdatePostPermissionsRequest**](../Model/UpdatePostPermissionsRequest.md)|  | |
 
 ### Return type
 
@@ -118,9 +118,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **create_post_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreatePostRequest**](../Model/CreatePostRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **create_post_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreatePostRequest**](../Model/CreatePostRequest.md)|  | |
 
 ### Return type
 
@@ -179,9 +179,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the post to delete |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the post to delete | |
 
 ### Return type
 
@@ -241,10 +241,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the post |
- **update_post_permissions_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdatePostPermissionsRequest**](../Model/UpdatePostPermissionsRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the post | |
+| **update_post_permissions_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdatePostPermissionsRequest**](../Model/UpdatePostPermissionsRequest.md)|  | |
 
 ### Return type
 
@@ -304,9 +304,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the post to get |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the post to get | |
 
 ### Return type
 
@@ -366,9 +366,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the post |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the post | |
 
 ### Return type
 
@@ -487,10 +487,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the post to update |
- **update_post_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdatePostRequest**](../Model/UpdatePostRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the post to update | |
+| **update_post_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdatePostRequest**](../Model/UpdatePostRequest.md)|  | |
 
 ### Return type
 

@@ -1,16 +1,16 @@
 # Jalismrs\Stalactite\Client\Data\UsersApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createUser()**](UsersApi.md#createUser) | **POST** /users | 
-[**deleteUser()**](UsersApi.md#deleteUser) | **DELETE** /users/{uid} | 
-[**getUser()**](UsersApi.md#getUser) | **GET** /users/{uid} | 
-[**getUserBy()**](UsersApi.md#getUserBy) | **GET** /users/by | 
-[**getUserSubordinates()**](UsersApi.md#getUserSubordinates) | **GET** /users/{uid}/subordinates | 
-[**getUsers()**](UsersApi.md#getUsers) | **GET** /users | 
-[**updateUser()**](UsersApi.md#updateUser) | **PUT** /users/{uid} | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createUser()**](UsersApi.md#createUser) | **POST** /users |  |
+| [**deleteUser()**](UsersApi.md#deleteUser) | **DELETE** /users/{uid} |  |
+| [**getUser()**](UsersApi.md#getUser) | **GET** /users/{uid} |  |
+| [**getUserBy()**](UsersApi.md#getUserBy) | **GET** /users/by |  |
+| [**getUserSubordinates()**](UsersApi.md#getUserSubordinates) | **GET** /users/{uid}/subordinates |  |
+| [**getUsers()**](UsersApi.md#getUsers) | **GET** /users |  |
+| [**updateUser()**](UsersApi.md#updateUser) | **PUT** /users/{uid} |  |
 
 
 ## `createUser()`
@@ -54,9 +54,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **create_user_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreateUserRequest**](../Model/CreateUserRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **create_user_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreateUserRequest**](../Model/CreateUserRequest.md)|  | |
 
 ### Return type
 
@@ -115,9 +115,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the user to delete |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the user to delete | |
 
 ### Return type
 
@@ -177,9 +177,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the user to get |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the user to get | |
 
 ### Return type
 
@@ -239,9 +239,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **email** | **string**| Filters users by email | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **email** | **string**| Filters users by email | [optional] |
 
 ### Return type
 
@@ -301,9 +301,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**|  | |
 
 ### Return type
 
@@ -325,12 +325,12 @@ Name | Type | Description  | Notes
 ## `getUsers()`
 
 ```php
-getUsers($page, $full_name): \Jalismrs\Stalactite\Client\Data\Model\GetUsersResponse
+getUsers($page, $search): \Jalismrs\Stalactite\Client\Data\Model\GetUsersResponse
 ```
 
 
 
-Get all users (supports pagination). Can be filtered by `fullname`
+Get all users (supports pagination). Can be filtered by first name or last name or email
 
 ### Example
 
@@ -352,10 +352,10 @@ $apiInstance = new Jalismrs\Stalactite\Client\Data\Api\UsersApi(
     $config
 );
 $page = 56; // int | Specify the page to get. Default: 1
-$full_name = 'full_name_example'; // string | Filters users by fullname
+$search = 'search_example'; // string | Filters users by first name or last name or email
 
 try {
-    $result = $apiInstance->getUsers($page, $full_name);
+    $result = $apiInstance->getUsers($page, $search);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling UsersApi->getUsers: ', $e->getMessage(), PHP_EOL;
@@ -364,10 +364,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Specify the page to get. Default: 1 | [optional]
- **full_name** | **string**| Filters users by fullname | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **page** | **int**| Specify the page to get. Default: 1 | [optional] |
+| **search** | **string**| Filters users by first name or last name or email | [optional] |
 
 ### Return type
 
@@ -427,10 +427,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the user to update |
- **update_user_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserRequest**](../Model/UpdateUserRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the user to update | |
+| **update_user_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserRequest**](../Model/UpdateUserRequest.md)|  | |
 
 ### Return type
 

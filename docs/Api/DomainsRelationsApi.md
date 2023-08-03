@@ -1,12 +1,12 @@
 # Jalismrs\Stalactite\Client\Data\DomainsRelationsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**addCustomerRelations()**](DomainsRelationsApi.md#addCustomerRelations) | **POST** /domains/{uid}/relations/customers | 
-[**addUserRelations()**](DomainsRelationsApi.md#addUserRelations) | **POST** /domains/{uid}/relations/users | 
-[**getDomainRelations()**](DomainsRelationsApi.md#getDomainRelations) | **GET** /domains/{uid}/relations | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**addCustomerRelations()**](DomainsRelationsApi.md#addCustomerRelations) | **POST** /domains/{uid}/relations/customers |  |
+| [**addUserRelations()**](DomainsRelationsApi.md#addUserRelations) | **POST** /domains/{uid}/relations/users |  |
+| [**getDomainRelations()**](DomainsRelationsApi.md#getDomainRelations) | **GET** /domains/{uid}/relations |  |
 
 
 ## `addCustomerRelations()`
@@ -51,10 +51,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the domain |
- **add_customer_relations_request** | [**\Jalismrs\Stalactite\Client\Data\Model\AddCustomerRelationsRequest**](../Model/AddCustomerRelationsRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the domain | |
+| **add_customer_relations_request** | [**\Jalismrs\Stalactite\Client\Data\Model\AddCustomerRelationsRequest**](../Model/AddCustomerRelationsRequest.md)|  | |
 
 ### Return type
 
@@ -115,10 +115,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the domain |
- **add_user_relations_request** | [**\Jalismrs\Stalactite\Client\Data\Model\AddUserRelationsRequest**](../Model/AddUserRelationsRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the domain | |
+| **add_user_relations_request** | [**\Jalismrs\Stalactite\Client\Data\Model\AddUserRelationsRequest**](../Model/AddUserRelationsRequest.md)|  | |
 
 ### Return type
 
@@ -178,9 +178,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the domain |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the domain | |
 
 ### Return type
 

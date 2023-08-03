@@ -1,15 +1,15 @@
 # Jalismrs\Stalactite\Client\Data\CustomersApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createCustomer()**](CustomersApi.md#createCustomer) | **POST** /customers | 
-[**deleteCustomer()**](CustomersApi.md#deleteCustomer) | **DELETE** /customers/{uid} | 
-[**getCustomer()**](CustomersApi.md#getCustomer) | **GET** /customers/{uid} | 
-[**getCustomerBy()**](CustomersApi.md#getCustomerBy) | **GET** /customers/by | 
-[**getCustomers()**](CustomersApi.md#getCustomers) | **GET** /customers | 
-[**updateCustomer()**](CustomersApi.md#updateCustomer) | **PUT** /customers/{uid} | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createCustomer()**](CustomersApi.md#createCustomer) | **POST** /customers |  |
+| [**deleteCustomer()**](CustomersApi.md#deleteCustomer) | **DELETE** /customers/{uid} |  |
+| [**getCustomer()**](CustomersApi.md#getCustomer) | **GET** /customers/{uid} |  |
+| [**getCustomerBy()**](CustomersApi.md#getCustomerBy) | **GET** /customers/by |  |
+| [**getCustomers()**](CustomersApi.md#getCustomers) | **GET** /customers |  |
+| [**updateCustomer()**](CustomersApi.md#updateCustomer) | **PUT** /customers/{uid} |  |
 
 
 ## `createCustomer()`
@@ -53,9 +53,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **create_customer_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreateCustomerRequest**](../Model/CreateCustomerRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **create_customer_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreateCustomerRequest**](../Model/CreateCustomerRequest.md)|  | |
 
 ### Return type
 
@@ -114,9 +114,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the customer to delete |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the customer to delete | |
 
 ### Return type
 
@@ -176,9 +176,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the customer to get |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the customer to get | |
 
 ### Return type
 
@@ -238,9 +238,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **email** | **string**| Filters customers by email | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **email** | **string**| Filters customers by email | [optional] |
 
 ### Return type
 
@@ -262,12 +262,12 @@ Name | Type | Description  | Notes
 ## `getCustomers()`
 
 ```php
-getCustomers($page, $full_name): \Jalismrs\Stalactite\Client\Data\Model\GetCustomersResponse
+getCustomers($page, $search): \Jalismrs\Stalactite\Client\Data\Model\GetCustomersResponse
 ```
 
 
 
-Get all customers (supports pagination). Can be filtered by `fullname`
+Get all customers (supports pagination). Can be filtered by first name or last name or email
 
 ### Example
 
@@ -289,10 +289,10 @@ $apiInstance = new Jalismrs\Stalactite\Client\Data\Api\CustomersApi(
     $config
 );
 $page = 56; // int | Specify the page to get. Default: 1
-$full_name = 'full_name_example'; // string | Filters customers by fullname
+$search = 'search_example'; // string | Filters customers by first name or last name or email
 
 try {
-    $result = $apiInstance->getCustomers($page, $full_name);
+    $result = $apiInstance->getCustomers($page, $search);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CustomersApi->getCustomers: ', $e->getMessage(), PHP_EOL;
@@ -301,10 +301,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Specify the page to get. Default: 1 | [optional]
- **full_name** | **string**| Filters customers by fullname | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **page** | **int**| Specify the page to get. Default: 1 | [optional] |
+| **search** | **string**| Filters customers by first name or last name or email | [optional] |
 
 ### Return type
 
@@ -364,10 +364,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the customer to update |
- **update_customer_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateCustomerRequest**](../Model/UpdateCustomerRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the customer to update | |
+| **update_customer_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateCustomerRequest**](../Model/UpdateCustomerRequest.md)|  | |
 
 ### Return type
 

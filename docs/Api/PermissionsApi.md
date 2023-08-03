@@ -1,14 +1,14 @@
 # Jalismrs\Stalactite\Client\Data\PermissionsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createPermission()**](PermissionsApi.md#createPermission) | **POST** /permissions | 
-[**deletePermission()**](PermissionsApi.md#deletePermission) | **DELETE** /permissions/{uid} | 
-[**getPermission()**](PermissionsApi.md#getPermission) | **GET** /permissions/{uid} | 
-[**getPermissions()**](PermissionsApi.md#getPermissions) | **GET** /permissions | 
-[**updatePermission()**](PermissionsApi.md#updatePermission) | **PUT** /permissions/{uid} | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createPermission()**](PermissionsApi.md#createPermission) | **POST** /permissions |  |
+| [**deletePermission()**](PermissionsApi.md#deletePermission) | **DELETE** /permissions/{uid} |  |
+| [**getPermission()**](PermissionsApi.md#getPermission) | **GET** /permissions/{uid} |  |
+| [**getPermissions()**](PermissionsApi.md#getPermissions) | **GET** /permissions |  |
+| [**updatePermission()**](PermissionsApi.md#updatePermission) | **PUT** /permissions/{uid} |  |
 
 
 ## `createPermission()`
@@ -52,9 +52,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **create_permission_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreatePermissionRequest**](../Model/CreatePermissionRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **create_permission_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreatePermissionRequest**](../Model/CreatePermissionRequest.md)|  | |
 
 ### Return type
 
@@ -113,9 +113,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the permission to delete |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the permission to delete | |
 
 ### Return type
 
@@ -175,9 +175,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the permission to get |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the permission to get | |
 
 ### Return type
 
@@ -296,10 +296,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the permission to update |
- **update_permission_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdatePermissionRequest**](../Model/UpdatePermissionRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the permission to update | |
+| **update_permission_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdatePermissionRequest**](../Model/UpdatePermissionRequest.md)|  | |
 
 ### Return type
 

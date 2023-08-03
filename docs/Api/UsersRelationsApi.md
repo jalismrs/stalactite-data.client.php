@@ -1,11 +1,11 @@
 # Jalismrs\Stalactite\Client\Data\UsersRelationsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getMyDomainRelations()**](UsersRelationsApi.md#getMyDomainRelations) | **GET** /users/me/relations | 
-[**getUserDomainRelations()**](UsersRelationsApi.md#getUserDomainRelations) | **GET** /users/{uid}/relations | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getMyDomainRelations()**](UsersRelationsApi.md#getMyDomainRelations) | **GET** /users/me/relations |  |
+| [**getUserDomainRelations()**](UsersRelationsApi.md#getUserDomainRelations) | **GET** /users/{uid}/relations |  |
 
 
 ## `getMyDomainRelations()`
@@ -108,9 +108,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**|  | |
 
 ### Return type
 

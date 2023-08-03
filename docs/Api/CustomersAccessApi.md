@@ -1,11 +1,11 @@
 # Jalismrs\Stalactite\Client\Data\CustomersAccessApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getCustomerAccessClearance()**](CustomersAccessApi.md#getCustomerAccessClearance) | **GET** /customers/{customerUid}/access/{domainUid} | 
-[**getMyCustomerAccessClearance()**](CustomersAccessApi.md#getMyCustomerAccessClearance) | **GET** /customers/me/access/{uid} | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getCustomerAccessClearance()**](CustomersAccessApi.md#getCustomerAccessClearance) | **GET** /customers/{customerUid}/access/{domainUid} |  |
+| [**getMyCustomerAccessClearance()**](CustomersAccessApi.md#getMyCustomerAccessClearance) | **GET** /customers/me/access/{uid} |  |
 
 
 ## `getCustomerAccessClearance()`
@@ -50,10 +50,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **customer_uid** | **string**| The uid of the customer you want the access clearance for |
- **domain_uid** | **string**| The uid of the domain you want the access clearance for |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **customer_uid** | **string**| The uid of the customer you want the access clearance for | |
+| **domain_uid** | **string**| The uid of the domain you want the access clearance for | |
 
 ### Return type
 
@@ -113,9 +113,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the domain you want the access clearance for |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the domain you want the access clearance for | |
 
 ### Return type
 

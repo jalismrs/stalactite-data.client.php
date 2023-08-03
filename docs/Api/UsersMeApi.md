@@ -1,13 +1,13 @@
 # Jalismrs\Stalactite\Client\Data\UsersMeApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getMeAsUser()**](UsersMeApi.md#getMeAsUser) | **GET** /users/me | 
-[**getMyLeads()**](UsersMeApi.md#getMyLeads) | **GET** /users/me/leads | 
-[**getMyPosts()**](UsersMeApi.md#getMyPosts) | **GET** /users/me/posts | 
-[**getMySubordinates()**](UsersMeApi.md#getMySubordinates) | **GET** /users/me/subordinates | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getMeAsUser()**](UsersMeApi.md#getMeAsUser) | **GET** /users/me |  |
+| [**getMyLeads()**](UsersMeApi.md#getMyLeads) | **GET** /users/me/leads |  |
+| [**getMyPosts()**](UsersMeApi.md#getMyPosts) | **GET** /users/me/posts |  |
+| [**getMySubordinates()**](UsersMeApi.md#getMySubordinates) | **GET** /users/me/subordinates |  |
 
 
 ## `getMeAsUser()`

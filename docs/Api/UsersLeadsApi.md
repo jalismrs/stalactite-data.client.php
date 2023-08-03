@@ -1,12 +1,12 @@
 # Jalismrs\Stalactite\Client\Data\UsersLeadsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**addUserLeads()**](UsersLeadsApi.md#addUserLeads) | **POST** /users/{uid}/leads | 
-[**getUserLeads()**](UsersLeadsApi.md#getUserLeads) | **GET** /users/{uid}/leads | 
-[**removeUserLeads()**](UsersLeadsApi.md#removeUserLeads) | **DELETE** /users/{uid}/leads | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**addUserLeads()**](UsersLeadsApi.md#addUserLeads) | **POST** /users/{uid}/leads |  |
+| [**getUserLeads()**](UsersLeadsApi.md#getUserLeads) | **GET** /users/{uid}/leads |  |
+| [**removeUserLeads()**](UsersLeadsApi.md#removeUserLeads) | **DELETE** /users/{uid}/leads |  |
 
 
 ## `addUserLeads()`
@@ -50,10 +50,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**|  |
- **update_user_leads_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserLeadsRequest**](../Model/UpdateUserLeadsRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**|  | |
+| **update_user_leads_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserLeadsRequest**](../Model/UpdateUserLeadsRequest.md)|  | |
 
 ### Return type
 
@@ -113,9 +113,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**|  | |
 
 ### Return type
 
@@ -175,10 +175,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**|  |
- **update_user_leads_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserLeadsRequest**](../Model/UpdateUserLeadsRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**|  | |
+| **update_user_leads_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateUserLeadsRequest**](../Model/UpdateUserLeadsRequest.md)|  | |
 
 ### Return type
 

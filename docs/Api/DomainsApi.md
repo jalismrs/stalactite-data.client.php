@@ -1,17 +1,17 @@
 # Jalismrs\Stalactite\Client\Data\DomainsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**createDomain()**](DomainsApi.md#createDomain) | **POST** /domains | 
-[**deleteDomain()**](DomainsApi.md#deleteDomain) | **DELETE** /domains/{uid} | 
-[**getDomain()**](DomainsApi.md#getDomain) | **GET** /domains/{uid} | 
-[**getDomainBy()**](DomainsApi.md#getDomainBy) | **GET** /domains/by | 
-[**getDomains()**](DomainsApi.md#getDomains) | **GET** /domains | 
-[**getDomainsNames()**](DomainsApi.md#getDomainsNames) | **GET** /domains/names | 
-[**getDomainsNamesActive()**](DomainsApi.md#getDomainsNamesActive) | **GET** /domains/names/active | 
-[**updateDomain()**](DomainsApi.md#updateDomain) | **PUT** /domains/{uid} | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**createDomain()**](DomainsApi.md#createDomain) | **POST** /domains |  |
+| [**deleteDomain()**](DomainsApi.md#deleteDomain) | **DELETE** /domains/{uid} |  |
+| [**getDomain()**](DomainsApi.md#getDomain) | **GET** /domains/{uid} |  |
+| [**getDomainBy()**](DomainsApi.md#getDomainBy) | **GET** /domains/by |  |
+| [**getDomains()**](DomainsApi.md#getDomains) | **GET** /domains |  |
+| [**getDomainsNames()**](DomainsApi.md#getDomainsNames) | **GET** /domains/names |  |
+| [**getDomainsNamesActive()**](DomainsApi.md#getDomainsNamesActive) | **GET** /domains/names/active |  |
+| [**updateDomain()**](DomainsApi.md#updateDomain) | **PUT** /domains/{uid} |  |
 
 
 ## `createDomain()`
@@ -55,9 +55,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **create_domain_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreateDomainRequest**](../Model/CreateDomainRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **create_domain_request** | [**\Jalismrs\Stalactite\Client\Data\Model\CreateDomainRequest**](../Model/CreateDomainRequest.md)|  | |
 
 ### Return type
 
@@ -116,9 +116,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the domain to delete |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the domain to delete | |
 
 ### Return type
 
@@ -178,9 +178,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the domain to get |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the domain to get | |
 
 ### Return type
 
@@ -240,9 +240,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **name** | **string**| Filters domains by name |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **name** | **string**| Filters domains by name | |
 
 ### Return type
 
@@ -303,10 +303,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **page** | **int**| Specify the page to get. Default: 1 | [optional]
- **name** | **string**| Filter domains by name | [optional]
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **page** | **int**| Specify the page to get. Default: 1 | [optional] |
+| **name** | **string**| Filter domains by name | [optional] |
 
 ### Return type
 
@@ -484,10 +484,10 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**| The uid of the domain to update |
- **update_domain_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateDomainRequest**](../Model/UpdateDomainRequest.md)|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**| The uid of the domain to update | |
+| **update_domain_request** | [**\Jalismrs\Stalactite\Client\Data\Model\UpdateDomainRequest**](../Model/UpdateDomainRequest.md)|  | |
 
 ### Return type
 

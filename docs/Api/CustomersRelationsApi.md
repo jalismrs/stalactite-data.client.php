@@ -1,11 +1,11 @@
 # Jalismrs\Stalactite\Client\Data\CustomersRelationsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data.
+All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
 
-Method | HTTP request | Description
-------------- | ------------- | -------------
-[**getCustomerRelations()**](CustomersRelationsApi.md#getCustomerRelations) | **GET** /customers/{uid}/relations | 
-[**getMyCustomerRelations()**](CustomersRelationsApi.md#getMyCustomerRelations) | **GET** /customers/me/relations | 
+| Method | HTTP request | Description |
+| ------------- | ------------- | ------------- |
+| [**getCustomerRelations()**](CustomersRelationsApi.md#getCustomerRelations) | **GET** /customers/{uid}/relations |  |
+| [**getMyCustomerRelations()**](CustomersRelationsApi.md#getMyCustomerRelations) | **GET** /customers/me/relations |  |
 
 
 ## `getCustomerRelations()`
@@ -49,9 +49,9 @@ try {
 
 ### Parameters
 
-Name | Type | Description  | Notes
-------------- | ------------- | ------------- | -------------
- **uid** | **string**|  |
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **uid** | **string**|  | |
 
 ### Return type
 

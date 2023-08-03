@@ -1,6 +1,6 @@
 <?php
 /**
- * ApiError
+ * HealthResponse
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \Jalismrs\Stalactite\Client\Data\ObjectSerializer;
 
 /**
- * ApiError Class Doc Comment
+ * HealthResponse Class Doc Comment
  *
  * @category Class
  * @package  Jalismrs\Stalactite\Client\Data
@@ -40,7 +40,7 @@ use \Jalismrs\Stalactite\Client\Data\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
+class HealthResponse implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'ApiError';
+    protected static $openAPIModelName = 'HealthResponse';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,8 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'type' => 'string',
-        'code' => 'string',
-        'message' => 'string'
+        'api' => 'string',
+        'database' => 'string'
     ];
 
     /**
@@ -70,9 +69,8 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'type' => null,
-        'code' => null,
-        'message' => null
+        'api' => null,
+        'database' => null
     ];
 
     /**
@@ -81,9 +79,8 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'type' => false,
-		'code' => false,
-		'message' => false
+        'api' => false,
+		'database' => false
     ];
 
     /**
@@ -172,9 +169,8 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'type' => 'type',
-        'code' => 'code',
-        'message' => 'message'
+        'api' => 'api',
+        'database' => 'database'
     ];
 
     /**
@@ -183,9 +179,8 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'code' => 'setCode',
-        'message' => 'setMessage'
+        'api' => 'setApi',
+        'database' => 'setDatabase'
     ];
 
     /**
@@ -194,9 +189,8 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'code' => 'getCode',
-        'message' => 'getMessage'
+        'api' => 'getApi',
+        'database' => 'getDatabase'
     ];
 
     /**
@@ -256,9 +250,8 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('type', $data ?? [], null);
-        $this->setIfExists('code', $data ?? [], null);
-        $this->setIfExists('message', $data ?? [], null);
+        $this->setIfExists('api', $data ?? [], null);
+        $this->setIfExists('database', $data ?? [], null);
     }
 
     /**
@@ -288,14 +281,11 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        if ($this->container['type'] === null) {
-            $invalidProperties[] = "'type' can't be null";
+        if ($this->container['api'] === null) {
+            $invalidProperties[] = "'api' can't be null";
         }
-        if ($this->container['code'] === null) {
-            $invalidProperties[] = "'code' can't be null";
-        }
-        if ($this->container['message'] === null) {
-            $invalidProperties[] = "'message' can't be null";
+        if ($this->container['database'] === null) {
+            $invalidProperties[] = "'database' can't be null";
         }
         return $invalidProperties;
     }
@@ -313,82 +303,55 @@ class ApiError implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets type
+     * Gets api
      *
      * @return string
      */
-    public function getType()
+    public function getApi()
     {
-        return $this->container['type'];
+        return $this->container['api'];
     }
 
     /**
-     * Sets type
+     * Sets api
      *
-     * @param string $type type
+     * @param string $api api
      *
      * @return self
      */
-    public function setType($type)
+    public function setApi($api)
     {
-        if (is_null($type)) {
-            throw new \InvalidArgumentException('non-nullable type cannot be null');
+        if (is_null($api)) {
+            throw new \InvalidArgumentException('non-nullable api cannot be null');
         }
-        $this->container['type'] = $type;
+        $this->container['api'] = $api;
 
         return $this;
     }
 
     /**
-     * Gets code
+     * Gets database
      *
      * @return string
      */
-    public function getCode()
+    public function getDatabase()
     {
-        return $this->container['code'];
+        return $this->container['database'];
     }
 
     /**
-     * Sets code
+     * Sets database
      *
-     * @param string $code code
+     * @param string $database database
      *
      * @return self
      */
-    public function setCode($code)
+    public function setDatabase($database)
     {
-        if (is_null($code)) {
-            throw new \InvalidArgumentException('non-nullable code cannot be null');
+        if (is_null($database)) {
+            throw new \InvalidArgumentException('non-nullable database cannot be null');
         }
-        $this->container['code'] = $code;
-
-        return $this;
-    }
-
-    /**
-     * Gets message
-     *
-     * @return string
-     */
-    public function getMessage()
-    {
-        return $this->container['message'];
-    }
-
-    /**
-     * Sets message
-     *
-     * @param string $message message
-     *
-     * @return self
-     */
-    public function setMessage($message)
-    {
-        if (is_null($message)) {
-            throw new \InvalidArgumentException('non-nullable message cannot be null');
-        }
-        $this->container['message'] = $message;
+        $this->container['database'] = $database;
 
         return $this;
     }
