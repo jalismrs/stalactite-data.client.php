@@ -1,6 +1,6 @@
 # Jalismrs\Stalactite\Client\Data\DomainsApi
 
-All URIs are relative to https://stalactite.jalis.dev/data, except if the operation defines another base path.
+All URIs are relative to https://stalactite.jalis.pro/data, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
